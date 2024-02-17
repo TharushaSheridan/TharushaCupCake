@@ -25,7 +25,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    BrowserModule, RouterModule.forRoot(routes), FormsModule,
+    RouterModule.forRoot(routes), FormsModule,
     AppRoutingModule
   ],
   providers: [],
