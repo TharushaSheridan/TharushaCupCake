@@ -1,0 +1,18 @@
+
+
+<div class="container">
+  <h1>Choose Flavor</h1>
+  <button (click)="goBack()">Back</button>
+  <form>
+    <label *ngFor="let flavor of flavors">
+      <input type="radio" [(ngModel)]="selectedFlavor" [value]="flavor" />
+      {{ flavor }}
+    </label>
+    <p>Subtotal ${{ subtotal }}</p>
+    <div>
+      <button (click)="goBack()">Cancel</button>
+      <button (click)="navigateToThirdPage()">Next</button>
+    </div>
+  </form>
+</div>
+

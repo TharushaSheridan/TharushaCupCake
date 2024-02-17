@@ -1,0 +1,14 @@
+
+
+<div class="container">
+  <h1>Order Summary</h1>
+  <button (click)="goBack()">Back</button>
+  <p>Quantity: {{ cupcakeCount }}</p>
+  <p>Flavor: {{ selectedFlavor }}</p>
+  <p>Subtotal ${{ subtotal }}</p>
+  <div>
+    <button (click)="sendOrder()">Send Order</button>
+    <button (click)="goBack()">Cancel</button>
+  </div>
+</div>
+
