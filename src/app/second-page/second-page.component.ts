@@ -32,9 +32,6 @@ export class SecondPageComponent implements OnInit {
     this.router.navigate(['']);
   }
 
-  navigateToThirdPage(): void {
-    console.log('Navigating to third page');
-    this.router.navigateByUrl(`/third-page/${this.cupcakeCount}/${this.selectedFlavor}`);
-  }
+
 
 }
